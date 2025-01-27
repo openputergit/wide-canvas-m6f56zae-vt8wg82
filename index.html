@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Quest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        /* Custom gradient animation */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .animated-gradient {
+            background: linear-gradient(-45deg, #1a237e, #311b92, #4a148c, #4527a0);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+    </style>
+</head>
+<body class="animated-gradient min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl text-white font-bold text-center mb-12">Learning Quest</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Mathematics Card -->
+            <a href="mathematics.html" class="transform hover:scale-105 transition-transform duration-200">
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 hover:bg-opacity-20">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-purple-500 bg-opacity-30 rounded-lg">
+                            <i class="bi bi-calculator text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold text-white">Mathematics</h2>
+                            <p class="text-purple-200">Algebra, Geometry & More</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Physics Card -->
+            <a href="physics.html" class="transform hover:scale-105 transition-transform duration-200">
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 hover:bg-opacity-20">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-blue-500 bg-opacity-30 rounded-lg">
+                            <i class="bi bi-atom text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold text-white">Physics</h2>
+                            <p class="text-blue-200">Mechanics, Energy & More</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Chemistry Card -->
+            <a href="chemistry.html" class="transform hover:scale-105 transition-transform duration-200">
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 hover:bg-opacity-20">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-green-500 bg-opacity-30 rounded-lg">
+                            <i class="bi bi-flask text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold text-white">Chemistry</h2>
+                            <p class="text-green-200">Elements, Reactions & More</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Biology Card -->
+            <a href="biology.html" class="transform hover:scale-105 transition-transform duration-200">
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 hover:bg-opacity-20">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-red-500 bg-opacity-30 rounded-lg">
+                            <i class="bi bi-virus text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold text-white">Biology</h2>
+                            <p class="text-red-200">Life Science & More</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- E-Books Card -->
+            <a href="ebooks.html" class="transform hover:scale-105 transition-transform duration-200">
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 hover:bg-opacity-20">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-yellow-500 bg-opacity-30 rounded-lg">
+                            <i class="bi bi-book text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-semibold text-white">E-Books</h2>
+                            <p class="text-yellow-200">Digital Library Resources</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-indigo-900 bg-opacity-95 backdrop-blur-lg p-4">
+        <div class="flex justify-around max-w-md mx-auto">
+            <button class="flex flex-col items-center text-white opacity-50 hover:opacity-100 transition-opacity">
+                <i class="bi bi-house text-xl"></i>
+                <span class="text-sm mt-1">Home</span>
+            </button>
+            <button class="flex flex-col items-center text-white opacity-50 hover:opacity-100 transition-opacity">
+                <i class="bi bi-grid text-xl"></i>
+                <span class="text-sm mt-1">Dashboard</span>
+            </button>
+            <button class="flex flex-col items-center text-white opacity-50 hover:opacity-100 transition-opacity">
+                <i class="bi bi-person text-xl"></i>
+                <span class="text-sm mt-1">Profile</span>
+            </button>
+        </div>
+    </nav>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
